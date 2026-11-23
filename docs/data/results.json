@@ -1,17 +1,27 @@
 {
  "date": "2026-11-24",
- "updated_at": "2026-11-24T07:49:56+09:00",
+ "updated_at": "2026-11-24T08:47:17+09:00",
  "last_run": {
-  "at": "2026-11-24T07:49:56+09:00",
+  "at": "2026-11-24T08:47:17+09:00",
   "scanned": {
-   "2026-11-24": 2
+   "2026-11-24": 6
   },
-  "matched": 0,
-  "new": 0,
+  "matched": 2,
+  "new": 2,
   "status": "ok",
   "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-24T08:47:17+09:00",
+   "scanned": {
+    "2026-11-24": 6
+   },
+   "matched": 2,
+   "new": 2,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-24T07:49:56+09:00",
    "scanned": {
@@ -125,5 +135,36 @@
    "error": null
   }
  ],
- "items": []
+ "items": [
+  {
+   "acptno": "20261124000212",
+   "date": "2026-11-24",
+   "time": "08:45",
+   "market_label": "유가증권",
+   "company_code": "03000",
+   "company": "제일기획",
+   "title": "[정정]수시공시의무관련사항(공정공시)",
+   "submitter": "제일기획",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000212",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "수시공시의무관련사항(공정공시)",
+   "first_seen": "2026-11-24T08:47:17+09:00"
+  },
+  {
+   "acptno": "20261124000170",
+   "date": "2026-11-24",
+   "time": "08:35",
+   "market_label": "유가증권",
+   "company_code": "03000",
+   "company": "제일기획",
+   "title": "주식 소각 결정",
+   "submitter": "제일기획",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000170",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "주식 소각 결정",
+   "first_seen": "2026-11-24T08:47:17+09:00"
+  }
+ ]
 }
