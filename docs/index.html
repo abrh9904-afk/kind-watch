@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>영문공시 대상 모니터</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6470; --line:#e3e6ea; --bg:#f6f7f9; --accent:#1f5eff; --new:#e8f0ff; --ok:#14804a; --err:#c62828; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif; color:var(--ink); background:var(--bg); font-size:14px; }
+  header { background:#fff; border-bottom:1px solid var(--line); padding:18px 24px 0; }
+  .top { display:flex; flex-wrap:wrap; gap:12px 16px; align-items:center; justify-content:space-between; }
+  h1 { font-size:18px; margin:0; }
+  .status { font-size:13px; color:var(--sub); }
+  .status b.ok { color:var(--ok); } .status b.err { color:var(--err); }
+  nav { display:flex; gap:4px; margin-top:14px; }
+  nav button { border:0; border-bottom:2px solid transparent; border-radius:0; background:none; padding:10px 14px; font-size:14px; color:var(--sub); }
+  nav button.on { color:var(--ink); border-bottom-color:var(--accent); font-weight:600; }
+  main { max-width:1280px; margin:0 auto; padding:20px 24px 60px; }
+  .bar { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:14px; }
+  .bar h2 { font-size:16px; margin:0 6px 0 0; }
+  .bar input, .bar select, button { font:inherit; padding:7px 10px; border:1px solid var(--line); border-radius:6px; background:#fff; }
+  button { cursor:pointer; } button.primary { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .count { margin-left:auto; color:var(--sub); }
+  table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); }
+  th, td { padding:9px 10px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+  th { background:#fafbfc; font-weight:600; color:var(--sub); font-size:12px; white-space:nowrap; }
+  tr.day td { background:#f0f2f5; font-weight:600; font-size:13px; }
+  tr.new td { background:var(--new); }
+  tr.sent td, tr.sent a { color:#9aa1a9; }
+  td.t { white-space:nowrap; font-variant-numeric:tabular-nums; }
+  a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+  .tag { display:inline-block; white-space:nowrap; font-size:11px; padding:1px 6px; border-radius:4px; background:#eef1f4; color:var(--sub); }
+  .badge { font-size:11px; color:#fff; background:var(--accent); border-radius:4px; padding:1px 5px; margin-left:4px; }
+  .empty { padding:40px; text-align:center; color:var(--sub); background:#fff; border:1px solid var(--line); border-radius:8px; }
+  .toast { position:fixed; bottom:20px; left:50%; transform:translateX(-50%); background:#222; color:#fff; padding:8px 14px; border-radius:6px; opacity:0; transition:.2s; pointer-events:none; }
+  .toast.show { opacity:1; }
+  details { margin-top:24px; color:var(--sub); } details table { font-size:12px; }
+  [hidden] { display:none !important; }
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <h1>영문공시 대상 모니터</h1>
+    <div class="status" id="status">불러오는 중…</div>
+  </div>
+  <nav>
+    <button class="on" data-tab="today">오늘</button>
+    <button data-tab="history">이전 기록</button>
+  </nav>
+</header>
+
+<main>
+  <!-- 오늘 탭: 자정(KST)마다 비워지고 그날 공시만 쌓인다 -->
+  <section id="tab-today">
+    <div class="bar">
+      <h2 id="todayTitle"></h2>
+      <select id="tMarket"><option value="">전체 시장</option><option value="kospi">코스피</option><option value="kosdaq">코스닥</option></select>
+      <input type="search" id="tQ" placeholder="회사명·공시제목 검색" size="20">
+      <label><input type="checkbox" id="tHide"> 전달 완료 숨기기</label>
+      <button class="primary" id="tCopy">미전달 목록 복사</button>
+      <button id="reload">새로고침</button>
+      <span class="count" id="tCount"></span>
+    </div>
+    <div id="tList"></div>
+    <details>
+      <summary>최근 조회 이력</summary>
+      <div id="runs"></div>
+    </details>
+  </section>
+
+  <!-- 이전 기록 탭: 전날까지의 누적 기록 -->
+  <section id="tab-history" hidden>
+    <div class="bar">
+      <select id="hMonth"></select>
+      <select id="hDate"></select>
+      <select id="hMarket"><option value="">전체 시장</option><option value="kospi">코스피</option><option value="kosdaq">코스닥</option></select>
+      <input type="search" id="hQ" placeholder="회사명·공시제목 검색" size="20">
+      <button id="hCopy">목록 복사</button>
+      <button id="hCsv">CSV 다운로드</button>
+      <span class="count" id="hCount"></span>
+    </div>
+    <div id="hList"></div>
+  </section>
+</main>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = id => document.getElementById(id);
+const SENT_KEY = "kindwatch_sent";
+let today = { items: [], runs: [] };
+let archiveIndex = { months: [], dates: {} };
+const monthCache = {};
+let sent = {};
+try { sent = JSON.parse(localStorage.getItem(SENT_KEY) || "{}"); } catch (e) { sent = {}; }
+const saveSent = () => { try { localStorage.setItem(SENT_KEY, JSON.stringify(sent)); } catch (e) {} };
+
+const todayKST = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
+const fmt = iso => iso ? iso.replace("T", " ").slice(0, 16) : "-";
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+const line = i => `[${i.company}] ${i.title} (${i.date} ${i.time})\n${i.url}`;
+const weekday = d => "일월화수목금토"[new Date(d + "T12:00:00Z").getUTCDay()];
+const getJSON = async url => (await fetch(url + "?t=" + Date.now(), { cache: "no-store" })).json();
+
+function toast(msg) { const t = $("toast"); t.textContent = msg; t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 1600); }
+async function copy(text) {
+  try { await navigator.clipboard.writeText(text); }
+  catch (e) { const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove(); }
+  toast("복사했습니다");
+}
+const filterBy = (items, market, q) => {
+  q = q.trim().toLowerCase();
+  return items.filter(i => (!market || i.market === market) && (!q || (i.company + " " + i.title).toLowerCase().includes(q)));
+};
+
+// 표 그리기: groupByDate가 true면 날짜 구분줄을 넣는다
+function table(items, { groupByDate = false, newStamp = null } = {}) {
+  if (!items.length) return `<div class="empty">해당하는 공시가 없습니다.</div>`;
+  let lastDate = "", rows = "";
+  for (const i of items) {
+    if (groupByDate && i.date !== lastDate) {
+      lastDate = i.date;
+      const n = items.filter(x => x.date === i.date).length;
+      rows += `<tr class="day"><td colspan="8">${esc(i.date)} (${weekday(i.date)}) · ${n}건</td></tr>`;
+    }
+    const isNew = newStamp && i.first_seen === newStamp;
+    rows += `<tr class="${isNew ? "new" : ""} ${sent[i.acptno] ? "sent" : ""}">
+      <td class="t">${esc(i.time)}</td>
+      <td><span class="tag">${esc(i.market_name)}</span></td>
+      <td>${esc(i.company)}</td>
+      <td><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a>${isNew ? '<span class="badge">NEW</span>' : ""}</td>
+      <td>${esc(i.matched_form)}</td>
+      <td class="t">${esc(fmt(i.first_seen).slice(5))}</td>
+      <td><input type="checkbox" data-sent="${esc(i.acptno)}" ${sent[i.acptno] ? "checked" : ""}></td>
+      <td><button data-copy="${esc(i.acptno)}">복사</button></td>
+    </tr>`;
+  }
+  return `<table><thead><tr><th>공시시각</th><th>시장</th><th>회사</th><th>공시제목</th><th>해당 서식</th><th>최초 확인</th><th>전달</th><th></th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+// ---------------- 오늘 탭
+// results.json에 아직 전날 공시가 남아 있어도(자정 이후 첫 조회 전) 오늘 날짜만 보여 준다.
+const todayItems = () => today.items.filter(i => i.date === todayKST());
+function visibleToday() {
+  return filterBy(todayItems(), $("tMarket").value, $("tQ").value).filter(i => !($("tHide").checked && sent[i.acptno]));
+}
+function renderToday() {
+  const d = todayKST();
+  $("todayTitle").textContent = `${d} (${weekday(d)})`;
+  const items = visibleToday();
+  $("tCount").textContent = `${items.length}건`;
+  $("tList").innerHTML = table(items, { newStamp: today.last_run?.at });
+}
+function renderStatus() {
+  const r = today.last_run;
+  if (!r) { $("status").textContent = "아직 조회 기록이 없습니다."; return; }
+  const scanned = Object.values(r.scanned || {}).reduce((a, b) => a + b, 0);
+  $("status").innerHTML = r.status === "ok"
+    ? `<b class="ok">정상</b> · 마지막 조회 ${esc(fmt(r.at))} · KIND ${scanned}건 확인 · 대상 ${r.matched}건 (신규 ${r.new})`
+    : `<b class="err">조회 실패</b> · ${esc(fmt(r.at))} · ${esc(r.error)} · 마지막 성공 ${esc(fmt(today.updated_at))}`;
+  $("runs").innerHTML = `<table><tr><th>시각</th><th>결과</th><th>KIND 확인</th><th>대상</th><th>신규</th><th>오류</th></tr>${
+    (today.runs || []).map(x => `<tr><td>${esc(fmt(x.at))}</td><td>${esc(x.status)}</td><td>${esc(Object.values(x.scanned || {}).reduce((a, b) => a + b, 0))}</td><td>${esc(x.matched)}</td><td>${esc(x.new)}</td><td>${esc(x.error || "")}</td></tr>`).join("")}</table>`;
+}
+
+// ---------------- 이전 기록 탭
+async function monthItems(month) {
+  if (!month) return [];
+  if (!monthCache[month]) {
+    try { monthCache[month] = (await getJSON(`data/archive/${month}.json`)).items || []; }
+    catch (e) { monthCache[month] = []; }
+  }
+  // 자정 이후 첫 조회 전이라 아직 보관함으로 옮겨지지 않은 전날 공시도 함께 보여 준다.
+  const pending = today.items.filter(i => i.date < todayKST() && i.date.startsWith(month));
+  const merged = Object.values(Object.fromEntries([...monthCache[month], ...pending].map(i => [i.acptno, i])));
+  return merged.sort((a, b) => (b.date + b.time + b.acptno).localeCompare(a.date + a.time + a.acptno));
+}
+function historyMonths() {
+  const pendingMonths = today.items.filter(i => i.date < todayKST()).map(i => i.date.slice(0, 7));
+  return [...new Set([...(archiveIndex.months || []), ...pendingMonths])].sort().reverse();
+}
+function fillMonths() {
+  const months = historyMonths(), cur = $("hMonth").value;
+  $("hMonth").innerHTML = months.length
+    ? months.map(m => `<option value="${m}">${m.replace("-", "년 ")}월</option>`).join("")
+    : `<option value="">기록 없음</option>`;
+  if (months.includes(cur)) $("hMonth").value = cur;
+}
+async function renderHistory() {
+  const month = $("hMonth").value;
+  const all = await monthItems(month);
+  const dates = [...new Set(all.map(i => i.date))];
+  const curDate = $("hDate").value;
+  $("hDate").innerHTML = `<option value="">월 전체</option>` +
+    dates.map(d => `<option value="${d}">${d.slice(5)} (${weekday(d)}) · ${all.filter(i => i.date === d).length}건</option>`).join("");
+  if (dates.includes(curDate)) $("hDate").value = curDate;
+  const items = filterBy(all.filter(i => !$("hDate").value || i.date === $("hDate").value), $("hMarket").value, $("hQ").value);
+  $("hCount").textContent = `${items.length}건`;
+  $("hList").innerHTML = month ? table(items, { groupByDate: true }) : `<div class="empty">아직 이전 기록이 없습니다. 자정이 지나면 오늘 목록이 이곳으로 옮겨집니다.</div>`;
+  return items;
+}
+
+// ---------------- 공통
+async function load() {
+  try { today = await getJSON("data/results.json"); }
+  catch (e) { $("status").innerHTML = `<b class="err">결과 파일을 불러오지 못했습니다.</b>`; }
+  try { archiveIndex = await getJSON("data/archive/index.json"); } catch (e) { archiveIndex = { months: [], dates: {} }; }
+  for (const k in monthCache) delete monthCache[k];
+  renderStatus(); renderToday(); fillMonths();
+  if (!$("tab-history").hidden) renderHistory();
+}
+
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("nav button").forEach(x => x.classList.toggle("on", x === b));
+  $("tab-today").hidden = b.dataset.tab !== "today";
+  $("tab-history").hidden = b.dataset.tab !== "history";
+  if (b.dataset.tab === "history") renderHistory();
+});
+["tMarket", "tQ", "tHide"].forEach(id => $(id).addEventListener("input", renderToday));
+$("hMonth").addEventListener("change", () => { $("hDate").value = ""; renderHistory(); });
+["hDate", "hMarket", "hQ"].forEach(id => $(id).addEventListener("input", renderHistory));
+$("reload").onclick = load;
+
+$("tCopy").onclick = () => {
+  const items = visibleToday().filter(i => !sent[i.acptno]).reverse();
+  if (!items.length) return toast("복사할 미전달 공시가 없습니다");
+  copy(items.map(line).join("\n\n"));
+};
+$("hCopy").onclick = async () => {
+  const items = (await renderHistory()).slice().reverse();
+  if (!items.length) return toast("복사할 공시가 없습니다");
+  copy(items.map(line).join("\n\n"));
+};
+$("hCsv").onclick = async () => {
+  const items = await renderHistory();
+  if (!items.length) return toast("내려받을 공시가 없습니다");
+  const cols = [["date","공시일자"],["time","공시시각"],["market_name","시장"],["company","회사명"],["title","공시제목"],["matched_form","해당 서식"],["submitter","제출인"],["url","공시링크"]];
+  const q = v => `"${String(v ?? "").replace(/"/g, '""')}"`;
+  const csv = "﻿" + [cols.map(c => q(c[1])).join(","), ...items.map(i => cols.map(c => q(i[c[0]])).join(","))].join("\r\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
+  a.download = `영문공시대상_${$("hDate").value || $("hMonth").value}.csv`; a.click();
+};
+
+// 복사·전달 체크 (두 탭 공통)
+document.querySelector("main").addEventListener("click", async e => {
+  const id = e.target.dataset.copy; if (!id) return;
+  const pool = [...today.items, ...Object.values(monthCache).flat()];
+  copy(line(pool.find(i => i.acptno === id)));
+});
+document.querySelector("main").addEventListener("change", e => {
+  const id = e.target.dataset.sent; if (!id) return;
+  if (e.target.checked) sent[id] = Date.now(); else delete sent[id];
+  saveSent(); renderToday(); if (!$("tab-history").hidden) renderHistory();
+});
+
+// 자정이 지나면 화면을 열어 둔 상태에서도 오늘 탭이 비워지도록 날짜 변경을 감시
+let shownDate = todayKST();
+setInterval(() => { if (todayKST() !== shownDate) { shownDate = todayKST(); load(); } }, 30 * 1000);
+setInterval(load, 5 * 60 * 1000);   // 5분마다 새 결과 확인
+load();
+</script>
+</body>
+</html>

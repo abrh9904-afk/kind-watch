@@ -1,0 +1,42 @@
+name: KIND 영문공시 대상 조회
+
+on:
+  schedule:
+    # 30분마다 (UTC 기준 매시 7분·37분 = KST 동일 분). 정각은 GitHub 혼잡으로 지연이 잦아 피함.
+    - cron: "7,37 * * * *"
+  workflow_dispatch:        # Actions 탭에서 수동 실행
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kind-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: KIND 조회 및 판정
+        run: python kind_watch.py
+        continue-on-error: true   # 실패해도 오류 기록은 결과 파일에 남겨 화면에 표시
+
+      - name: 결과 저장
+        run: |
+          git config user.name "kind-watch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data/
+          git diff --cached --quiet && exit 0
+          git commit -m "결과 갱신 $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')"
+          git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" || true
+          git push
