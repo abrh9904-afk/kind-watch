@@ -1,16 +1,27 @@
 {
- "updated_at": "2026-11-23T17:54:18+09:00",
+ "date": "2026-11-23",
+ "updated_at": "2026-11-23T22:10:35+09:00",
  "last_run": {
-  "at": "2026-11-23T17:54:18+09:00",
+  "at": "2026-11-23T22:10:35+09:00",
   "scanned": {
-   "2026-11-23": 381
+   "2026-11-23": 456
   },
-  "matched": 26,
-  "new": 26,
+  "matched": 28,
+  "new": 2,
   "status": "ok",
   "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-23T22:10:35+09:00",
+   "scanned": {
+    "2026-11-23": 456
+   },
+   "matched": 28,
+   "new": 2,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-23T17:54:18+09:00",
    "scanned": {
@@ -294,6 +305,21 @@
    "first_seen": "2026-11-23T17:54:18+09:00"
   },
   {
+   "acptno": "20261123000167",
+   "date": "2026-11-23",
+   "time": "11:09",
+   "market_label": "유가증권",
+   "company_code": "29487",
+   "company": "IPARK현대산업개발",
+   "title": "투자판단 관련 주요경영사항",
+   "submitter": "아이파크현대산업개발",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261123000167",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "투자판단 관련 주요경영사항",
+   "first_seen": "2026-11-23T22:10:35+09:00"
+  },
+  {
    "acptno": "20261123000156",
    "date": "2026-11-23",
    "time": "10:27",
@@ -352,6 +378,21 @@
    "market_name": "코스피",
    "matched_form": "투자판단 관련 주요경영사항",
    "first_seen": "2026-11-23T17:54:18+09:00"
+  },
+  {
+   "acptno": "20261123000112",
+   "date": "2026-11-23",
+   "time": "09:24",
+   "market_label": "유가증권",
+   "company_code": "29487",
+   "company": "IPARK현대산업개발",
+   "title": "투자판단 관련 주요경영사항",
+   "submitter": "아이파크현대산업개발",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261123000112",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "투자판단 관련 주요경영사항",
+   "first_seen": "2026-11-23T22:10:35+09:00"
   },
   {
    "acptno": "20261123000110",
