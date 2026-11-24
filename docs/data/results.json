@@ -1,15 +1,27 @@
 {
  "date": "2026-11-24",
- "updated_at": "2026-11-24T14:34:13+09:00",
+ "updated_at": "2026-11-24T16:55:21+09:00",
  "last_run": {
-  "at": "2026-11-24T15:27:53+09:00",
-  "scanned": {},
-  "matched": 0,
-  "new": 0,
-  "status": "error",
-  "error": "KIND 조회 실패 (2026-11-24 1페이지): 403 Client Error: Forbidden for url: https://kind.krx.co.kr/disclosure/todaydisclosure.do"
+  "at": "2026-11-24T16:55:21+09:00",
+  "scanned": {
+   "2026-11-24": 378
+  },
+  "matched": 15,
+  "new": 9,
+  "status": "ok",
+  "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-24T16:55:21+09:00",
+   "scanned": {
+    "2026-11-24": 378
+   },
+   "matched": 15,
+   "new": 9,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-24T15:27:53+09:00",
    "scanned": {},
@@ -192,6 +204,141 @@
   }
  ],
  "items": [
+  {
+   "acptno": "20261124000819",
+   "date": "2026-11-24",
+   "time": "16:44",
+   "market_label": "유가증권",
+   "company_code": "00665",
+   "company": "대한유화",
+   "title": "[정정]생산중단",
+   "submitter": "대한유화",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000819",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "생산중단",
+   "first_seen": "2026-11-24T16:55:21+09:00"
+  },
+  {
+   "acptno": "20261124000807",
+   "date": "2026-11-24",
+   "time": "16:38",
+   "market_label": "유가증권",
+   "company_code": "35282",
+   "company": "하이브",
+   "title": "[정정]주주총회소집결의",
+   "submitter": "하이브",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000807",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "주주총회소집결의",
+   "first_seen": "2026-11-24T16:55:21+09:00"
+  },
+  {
+   "acptno": "20261124000791",
+   "date": "2026-11-24",
+   "time": "16:33",
+   "market_label": "유가증권",
+   "company_code": "29805",
+   "company": "HS효성첨단소재",
+   "title": "타인에대한채무보증결정",
+   "submitter": "에이치에스효성첨단소재",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000791",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "타인에대한채무보증결정",
+   "first_seen": "2026-11-24T16:55:21+09:00"
+  },
+  {
+   "acptno": "20261124000768",
+   "date": "2026-11-24",
+   "time": "16:22",
+   "market_label": "유가증권",
+   "company_code": "35282",
+   "company": "하이브",
+   "title": "[정정]타법인주식및출자증권처분결정",
+   "submitter": "하이브",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000768",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "타법인주식및출자증권처분결정",
+   "first_seen": "2026-11-24T16:55:21+09:00"
+  },
+  {
+   "acptno": "20261124000670",
+   "date": "2026-11-24",
+   "time": "15:54",
+   "market_label": "유가증권",
+   "company_code": "00954",
+   "company": "HD한국조선해양",
+   "title": "영업(잠정)실적(공정공시)",
+   "submitter": "에이치디한국조선해양",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000670",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "영업(잠정)실적(공정공시)",
+   "first_seen": "2026-11-24T16:55:21+09:00"
+  },
+  {
+   "acptno": "20261124000666",
+   "date": "2026-11-24",
+   "time": "15:54",
+   "market_label": "유가증권",
+   "company_code": "00954",
+   "company": "HD한국조선해양",
+   "title": "영업(잠정)실적(공정공시)(자회사의 주요경영사항)",
+   "submitter": "에이치디한국조선해양",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000666",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "영업(잠정)실적(공정공시)",
+   "first_seen": "2026-11-24T16:55:21+09:00"
+  },
+  {
+   "acptno": "20261124000659",
+   "date": "2026-11-24",
+   "time": "15:54",
+   "market_label": "유가증권",
+   "company_code": "32918",
+   "company": "HD현대중공업",
+   "title": "영업(잠정)실적(공정공시)",
+   "submitter": "에이치디현대중공업",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000659",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "영업(잠정)실적(공정공시)",
+   "first_seen": "2026-11-24T16:55:21+09:00"
+  },
+  {
+   "acptno": "20261124000657",
+   "date": "2026-11-24",
+   "time": "15:43",
+   "market_label": "유가증권",
+   "company_code": "00612",
+   "company": "SK디스커버리",
+   "title": "단기차입금증가결정(자회사의 주요경영사항)",
+   "submitter": "에스케이디스커버리",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000657",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단기차입금증가결정",
+   "first_seen": "2026-11-24T16:55:21+09:00"
+  },
+  {
+   "acptno": "20261124000613",
+   "date": "2026-11-24",
+   "time": "15:25",
+   "market_label": "유가증권",
+   "company_code": "09723",
+   "company": "HJ중공업",
+   "title": "[정정]단일판매ㆍ공급계약체결",
+   "submitter": "에이치제이중공업",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000613",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-24T16:55:21+09:00"
+  },
   {
    "acptno": "20261124000539",
    "date": "2026-11-24",
