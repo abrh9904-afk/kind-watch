@@ -1,17 +1,27 @@
 {
  "date": "2026-11-24",
- "updated_at": "2026-11-24T08:47:17+09:00",
+ "updated_at": "2026-11-24T09:59:38+09:00",
  "last_run": {
-  "at": "2026-11-24T08:47:17+09:00",
+  "at": "2026-11-24T09:59:38+09:00",
   "scanned": {
-   "2026-11-24": 6
+   "2026-11-24": 74
   },
-  "matched": 2,
-  "new": 2,
+  "matched": 3,
+  "new": 1,
   "status": "ok",
   "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-24T09:59:38+09:00",
+   "scanned": {
+    "2026-11-24": 74
+   },
+   "matched": 3,
+   "new": 1,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-24T08:47:17+09:00",
    "scanned": {
@@ -136,6 +146,21 @@
   }
  ],
  "items": [
+  {
+   "acptno": "20261124000261",
+   "date": "2026-11-24",
+   "time": "09:05",
+   "market_label": "유가증권",
+   "company_code": "03000",
+   "company": "제일기획",
+   "title": "자기주식 취득 결정",
+   "submitter": "제일기획",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000261",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "자기주식 취득 결정",
+   "first_seen": "2026-11-24T09:59:38+09:00"
+  },
   {
    "acptno": "20261124000212",
    "date": "2026-11-24",
