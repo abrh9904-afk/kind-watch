@@ -2,16 +2,22 @@
  "date": "2026-11-24",
  "updated_at": "2026-11-24T19:04:49+09:00",
  "last_run": {
-  "at": "2026-11-24T19:04:49+09:00",
-  "scanned": {
-   "2026-11-24": 473
-  },
-  "matched": 21,
-  "new": 1,
-  "status": "ok",
-  "error": null
+  "at": "2026-11-24T19:57:00+09:00",
+  "scanned": {},
+  "matched": 0,
+  "new": 0,
+  "status": "error",
+  "error": "KIND 조회 실패 (2026-11-24 1페이지): 403 Client Error: Forbidden for url: https://kind.krx.co.kr/disclosure/todaydisclosure.do"
  },
  "runs": [
+  {
+   "at": "2026-11-24T19:57:00+09:00",
+   "scanned": {},
+   "matched": 0,
+   "new": 0,
+   "status": "error",
+   "error": "KIND 조회 실패 (2026-11-24 1페이지): 403 Client Error: Forbidden for url: https://kind.krx.co.kr/disclosure/todaydisclosure.do"
+  },
   {
    "at": "2026-11-24T19:04:49+09:00",
    "scanned": {
