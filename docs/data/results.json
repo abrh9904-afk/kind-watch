@@ -1,17 +1,27 @@
 {
  "date": "2026-11-24",
- "updated_at": "2026-11-24T13:36:17+09:00",
+ "updated_at": "2026-11-24T14:34:13+09:00",
  "last_run": {
-  "at": "2026-11-24T13:36:17+09:00",
+  "at": "2026-11-24T14:34:13+09:00",
   "scanned": {
-   "2026-11-24": 156
+   "2026-11-24": 188
   },
-  "matched": 3,
-  "new": 0,
+  "matched": 6,
+  "new": 3,
   "status": "ok",
   "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-24T14:34:13+09:00",
+   "scanned": {
+    "2026-11-24": 188
+   },
+   "matched": 6,
+   "new": 3,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-24T13:36:17+09:00",
    "scanned": {
@@ -176,6 +186,51 @@
   }
  ],
  "items": [
+  {
+   "acptno": "20261124000539",
+   "date": "2026-11-24",
+   "time": "13:59",
+   "market_label": "유가증권",
+   "company_code": "01006",
+   "company": "OCI홀딩스",
+   "title": "투자판단 관련 주요경영사항(자회사의 주요경영사항)",
+   "submitter": "오씨아이홀딩스",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000539",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "투자판단 관련 주요경영사항",
+   "first_seen": "2026-11-24T14:34:13+09:00"
+  },
+  {
+   "acptno": "20261124000504",
+   "date": "2026-11-24",
+   "time": "13:56",
+   "market_label": "유가증권",
+   "company_code": "45604",
+   "company": "OCI",
+   "title": "투자판단 관련 주요경영사항",
+   "submitter": "OCI",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000504",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "투자판단 관련 주요경영사항",
+   "first_seen": "2026-11-24T14:34:13+09:00"
+  },
+  {
+   "acptno": "20261124000494",
+   "date": "2026-11-24",
+   "time": "13:36",
+   "market_label": "유가증권",
+   "company_code": "01336",
+   "company": "일성건설",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "일성건설",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124000494",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-24T14:34:13+09:00"
+  },
   {
    "acptno": "20261124000261",
    "date": "2026-11-24",
