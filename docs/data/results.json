@@ -1,17 +1,27 @@
 {
  "date": "2026-11-24",
- "updated_at": "2026-11-24T17:58:46+09:00",
+ "updated_at": "2026-11-24T19:04:49+09:00",
  "last_run": {
-  "at": "2026-11-24T17:58:46+09:00",
+  "at": "2026-11-24T19:04:49+09:00",
   "scanned": {
-   "2026-11-24": 466
+   "2026-11-24": 473
   },
-  "matched": 20,
-  "new": 5,
+  "matched": 21,
+  "new": 1,
   "status": "ok",
   "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-24T19:04:49+09:00",
+   "scanned": {
+    "2026-11-24": 473
+   },
+   "matched": 21,
+   "new": 1,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-24T17:58:46+09:00",
    "scanned": {
@@ -214,6 +224,21 @@
   }
  ],
  "items": [
+  {
+   "acptno": "20261124001000",
+   "date": "2026-11-24",
+   "time": "18:20",
+   "market_label": "유가증권",
+   "company_code": "35282",
+   "company": "하이브",
+   "title": "[정정]타법인주식및출자증권취득결정",
+   "submitter": "하이브",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261124001000",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "타법인주식및출자증권취득결정",
+   "first_seen": "2026-11-24T19:04:49+09:00"
+  },
   {
    "acptno": "20261124000972",
    "date": "2026-11-24",
