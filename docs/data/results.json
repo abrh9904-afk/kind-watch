@@ -1,17 +1,27 @@
 {
  "date": "2026-11-25",
- "updated_at": "2026-11-25T17:48:50+09:00",
+ "updated_at": "2026-11-25T19:08:27+09:00",
  "last_run": {
-  "at": "2026-11-25T17:48:50+09:00",
+  "at": "2026-11-25T19:08:27+09:00",
   "scanned": {
-   "2026-11-25": 477
+   "2026-11-25": 491
   },
-  "matched": 18,
-  "new": 4,
+  "matched": 19,
+  "new": 1,
   "status": "ok",
   "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-25T19:08:27+09:00",
+   "scanned": {
+    "2026-11-25": 491
+   },
+   "matched": 19,
+   "new": 1,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-25T17:48:50+09:00",
    "scanned": {
@@ -294,19 +304,24 @@
    "new": 1,
    "status": "ok",
    "error": null
-  },
-  {
-   "at": "2026-11-24T08:47:17+09:00",
-   "scanned": {
-    "2026-11-24": 6
-   },
-   "matched": 2,
-   "new": 2,
-   "status": "ok",
-   "error": null
   }
  ],
  "items": [
+  {
+   "acptno": "20261125000766",
+   "date": "2026-11-25",
+   "time": "17:49",
+   "market_label": "유가증권",
+   "company_code": "00066",
+   "company": "SK하이닉스",
+   "title": "기업가치 제고 계획(자율공시)",
+   "submitter": "에스케이하이닉스",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000766",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "기업가치 제고 계획(자율공시)",
+   "first_seen": "2026-11-25T19:08:27+09:00"
+  },
   {
    "acptno": "20261125000748",
    "date": "2026-11-25",
