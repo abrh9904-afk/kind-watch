@@ -1,15 +1,27 @@
 {
  "date": "2026-11-25",
- "updated_at": "2026-11-25T08:46:28+09:00",
+ "updated_at": "2026-11-25T11:21:07+09:00",
  "last_run": {
-  "at": "2026-11-25T10:04:57+09:00",
-  "scanned": {},
-  "matched": 0,
-  "new": 0,
-  "status": "error",
-  "error": "KIND 조회 실패 (2026-11-25 1페이지): 403 Client Error: Forbidden for url: https://kind.krx.co.kr/disclosure/todaydisclosure.do"
+  "at": "2026-11-25T11:21:07+09:00",
+  "scanned": {
+   "2026-11-25": 82
+  },
+  "matched": 1,
+  "new": 1,
+  "status": "ok",
+  "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-25T11:21:07+09:00",
+   "scanned": {
+    "2026-11-25": 82
+   },
+   "matched": 1,
+   "new": 1,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-25T10:04:57+09:00",
    "scanned": {},
@@ -292,17 +304,23 @@
    "new": 0,
    "status": "ok",
    "error": null
-  },
-  {
-   "at": "2026-11-24T02:55:36+09:00",
-   "scanned": {
-    "2026-11-24": 0
-   },
-   "matched": 0,
-   "new": 0,
-   "status": "ok",
-   "error": null
   }
  ],
- "items": []
+ "items": [
+  {
+   "acptno": "20261125000134",
+   "date": "2026-11-25",
+   "time": "10:35",
+   "market_label": "유가증권",
+   "company_code": "01120",
+   "company": "HMM",
+   "title": "임시주주총회 결과",
+   "submitter": "에이치엠엠",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000134",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "임시주주총회 결과",
+   "first_seen": "2026-11-25T11:21:07+09:00"
+  }
+ ]
 }
