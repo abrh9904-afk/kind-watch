@@ -1,17 +1,27 @@
 {
  "date": "2026-11-25",
- "updated_at": "2026-11-25T16:12:42+09:00",
+ "updated_at": "2026-11-25T17:48:50+09:00",
  "last_run": {
-  "at": "2026-11-25T16:12:42+09:00",
+  "at": "2026-11-25T17:48:50+09:00",
   "scanned": {
-   "2026-11-25": 307
+   "2026-11-25": 477
   },
-  "matched": 14,
+  "matched": 18,
   "new": 4,
   "status": "ok",
   "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-25T17:48:50+09:00",
+   "scanned": {
+    "2026-11-25": 477
+   },
+   "matched": 18,
+   "new": 4,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-25T16:12:42+09:00",
    "scanned": {
@@ -294,19 +304,69 @@
    "new": 2,
    "status": "ok",
    "error": null
-  },
-  {
-   "at": "2026-11-24T07:49:56+09:00",
-   "scanned": {
-    "2026-11-24": 2
-   },
-   "matched": 0,
-   "new": 0,
-   "status": "ok",
-   "error": null
   }
  ],
  "items": [
+  {
+   "acptno": "20261125000748",
+   "date": "2026-11-25",
+   "time": "17:40",
+   "market_label": "유가증권",
+   "company_code": "04266",
+   "company": "한화오션",
+   "title": "투자판단 관련 주요경영사항",
+   "submitter": "한화오션",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000748",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "투자판단 관련 주요경영사항",
+   "first_seen": "2026-11-25T17:48:50+09:00"
+  },
+  {
+   "acptno": "20261125000735",
+   "date": "2026-11-25",
+   "time": "17:30",
+   "market_label": "유가증권",
+   "company_code": "00915",
+   "company": "삼성전기",
+   "title": "주식 소각 결정",
+   "submitter": "삼성전기",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000735",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "주식 소각 결정",
+   "first_seen": "2026-11-25T17:48:50+09:00"
+  },
+  {
+   "acptno": "20261125000592",
+   "date": "2026-11-25",
+   "time": "16:38",
+   "market_label": "유가증권",
+   "company_code": "03473",
+   "company": "SK",
+   "title": "[정정]회사합병 결정(자회사의 주요경영사항)",
+   "submitter": "SK",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000592",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "회사합병 결정",
+   "first_seen": "2026-11-25T17:48:50+09:00"
+  },
+  {
+   "acptno": "20261125000554",
+   "date": "2026-11-25",
+   "time": "16:34",
+   "market_label": "유가증권",
+   "company_code": "09677",
+   "company": "SK이노베이션",
+   "title": "[정정]회사합병 결정",
+   "submitter": "SK이노베이션",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000554",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "회사합병 결정",
+   "first_seen": "2026-11-25T17:48:50+09:00"
+  },
   {
    "acptno": "20261125000466",
    "date": "2026-11-25",
