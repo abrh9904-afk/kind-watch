@@ -1,17 +1,27 @@
 {
  "date": "2026-11-25",
- "updated_at": "2026-11-25T12:33:23+09:00",
+ "updated_at": "2026-11-25T13:40:19+09:00",
  "last_run": {
-  "at": "2026-11-25T12:33:23+09:00",
+  "at": "2026-11-25T13:40:19+09:00",
   "scanned": {
-   "2026-11-25": 104
+   "2026-11-25": 131
   },
-  "matched": 3,
+  "matched": 5,
   "new": 2,
   "status": "ok",
   "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-25T13:40:19+09:00",
+   "scanned": {
+    "2026-11-25": 131
+   },
+   "matched": 5,
+   "new": 2,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-25T12:33:23+09:00",
    "scanned": {
@@ -294,19 +304,39 @@
    "new": 0,
    "status": "ok",
    "error": null
-  },
-  {
-   "at": "2026-11-24T04:58:59+09:00",
-   "scanned": {
-    "2026-11-24": 0
-   },
-   "matched": 0,
-   "new": 0,
-   "status": "ok",
-   "error": null
   }
  ],
  "items": [
+  {
+   "acptno": "20261125000222",
+   "date": "2026-11-25",
+   "time": "12:54",
+   "market_label": "유가증권",
+   "company_code": "06435",
+   "company": "현대로템",
+   "title": "자기주식 처분 결정",
+   "submitter": "현대로템",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000222",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "자기주식 처분 결정",
+   "first_seen": "2026-11-25T13:40:19+09:00"
+  },
+  {
+   "acptno": "20261125000220",
+   "date": "2026-11-25",
+   "time": "12:43",
+   "market_label": "유가증권",
+   "company_code": "06435",
+   "company": "현대로템",
+   "title": "임시주주총회 결과",
+   "submitter": "현대로템",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261125000220",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "임시주주총회 결과",
+   "first_seen": "2026-11-25T13:40:19+09:00"
+  },
   {
    "acptno": "20261125000198",
    "date": "2026-11-25",
