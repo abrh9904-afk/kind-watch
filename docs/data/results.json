@@ -1,15 +1,27 @@
 {
  "date": "2026-11-26",
- "updated_at": "2026-11-26T13:38:26+09:00",
+ "updated_at": "2026-11-26T16:10:55+09:00",
  "last_run": {
-  "at": "2026-11-26T14:59:04+09:00",
-  "scanned": {},
-  "matched": 0,
-  "new": 0,
-  "status": "error",
-  "error": "KIND 조회 실패 (2026-11-26 1페이지): 403 Client Error: Forbidden for url: https://kind.krx.co.kr/disclosure/todaydisclosure.do"
+  "at": "2026-11-26T16:10:55+09:00",
+  "scanned": {
+   "2026-11-26": 250
+  },
+  "matched": 6,
+  "new": 5,
+  "status": "ok",
+  "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-26T16:10:55+09:00",
+   "scanned": {
+    "2026-11-26": 250
+   },
+   "matched": 6,
+   "new": 5,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-26T14:59:04+09:00",
    "scanned": {},
@@ -294,19 +306,84 @@
    "new": 0,
    "status": "ok",
    "error": null
-  },
-  {
-   "at": "2026-11-25T05:50:25+09:00",
-   "scanned": {
-    "2026-11-25": 0
-   },
-   "matched": 0,
-   "new": 0,
-   "status": "ok",
-   "error": null
   }
  ],
  "items": [
+  {
+   "acptno": "20261126000483",
+   "date": "2026-11-26",
+   "time": "16:07",
+   "market_label": "유가증권",
+   "company_code": "00684",
+   "company": "AK홀딩스",
+   "title": "[정정]금전대여 결정",
+   "submitter": "AK홀딩스",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000483",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "금전대여 결정",
+   "first_seen": "2026-11-26T16:10:55+09:00"
+  },
+  {
+   "acptno": "20261126000452",
+   "date": "2026-11-26",
+   "time": "15:53",
+   "market_label": "유가증권",
+   "company_code": "00238",
+   "company": "케이씨씨",
+   "title": "주식 소각 결정",
+   "submitter": "케이씨씨",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000452",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "주식 소각 결정",
+   "first_seen": "2026-11-26T16:10:55+09:00"
+  },
+  {
+   "acptno": "20261126000473",
+   "date": "2026-11-26",
+   "time": "15:51",
+   "market_label": "유가증권",
+   "company_code": "00684",
+   "company": "AK홀딩스",
+   "title": "[정정]금전대여 결정",
+   "submitter": "AK홀딩스",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000473",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "금전대여 결정",
+   "first_seen": "2026-11-26T16:10:55+09:00"
+  },
+  {
+   "acptno": "20261126000446",
+   "date": "2026-11-26",
+   "time": "15:43",
+   "market_label": "유가증권",
+   "company_code": "00015",
+   "company": "두산",
+   "title": "유형자산 취득결정",
+   "submitter": "두산",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000446",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "유형자산 취득결정",
+   "first_seen": "2026-11-26T16:10:55+09:00"
+  },
+  {
+   "acptno": "20261126000297",
+   "date": "2026-11-26",
+   "time": "14:06",
+   "market_label": "유가증권",
+   "company_code": "00636",
+   "company": "GS건설",
+   "title": "[정정]타인에대한채무보증결정",
+   "submitter": "지에스건설",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000297",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "타인에대한채무보증결정",
+   "first_seen": "2026-11-26T16:10:55+09:00"
+  },
   {
    "acptno": "20261126000200",
    "date": "2026-11-26",
