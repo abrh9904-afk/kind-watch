@@ -1,15 +1,27 @@
 {
  "date": "2026-11-27",
- "updated_at": "2026-11-27T02:54:10+09:00",
+ "updated_at": "2026-11-27T05:00:05+09:00",
  "last_run": {
-  "at": "2026-11-27T03:55:28+09:00",
-  "scanned": {},
+  "at": "2026-11-27T05:00:05+09:00",
+  "scanned": {
+   "2026-11-27": 0
+  },
   "matched": 0,
   "new": 0,
-  "status": "error",
-  "error": "KIND 조회 실패 (2026-11-27 1페이지): 403 Client Error: Forbidden for url: https://kind.krx.co.kr/disclosure/todaydisclosure.do"
+  "status": "ok",
+  "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-27T05:00:05+09:00",
+   "scanned": {
+    "2026-11-27": 0
+   },
+   "matched": 0,
+   "new": 0,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-27T03:55:28+09:00",
    "scanned": {},
@@ -293,16 +305,6 @@
    },
    "matched": 19,
    "new": 0,
-   "status": "ok",
-   "error": null
-  },
-  {
-   "at": "2026-11-25T19:08:27+09:00",
-   "scanned": {
-    "2026-11-25": 491
-   },
-   "matched": 19,
-   "new": 1,
    "status": "ok",
    "error": null
   }
