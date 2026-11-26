@@ -1,17 +1,27 @@
 {
  "date": "2026-11-26",
- "updated_at": "2026-11-26T16:10:55+09:00",
+ "updated_at": "2026-11-26T17:45:55+09:00",
  "last_run": {
-  "at": "2026-11-26T16:10:55+09:00",
+  "at": "2026-11-26T17:45:55+09:00",
   "scanned": {
-   "2026-11-26": 250
+   "2026-11-26": 401
   },
-  "matched": 6,
-  "new": 5,
+  "matched": 18,
+  "new": 12,
   "status": "ok",
   "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-26T17:45:55+09:00",
+   "scanned": {
+    "2026-11-26": 401
+   },
+   "matched": 18,
+   "new": 12,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-26T16:10:55+09:00",
    "scanned": {
@@ -296,19 +306,189 @@
    "new": 0,
    "status": "ok",
    "error": null
-  },
-  {
-   "at": "2026-11-25T06:54:35+09:00",
-   "scanned": {
-    "2026-11-25": 0
-   },
-   "matched": 0,
-   "new": 0,
-   "status": "ok",
-   "error": null
   }
  ],
  "items": [
+  {
+   "acptno": "20261126000741",
+   "date": "2026-11-26",
+   "time": "17:35",
+   "market_label": "유가증권",
+   "company_code": "00202",
+   "company": "코오롱",
+   "title": "[정정]단일판매ㆍ공급계약체결(자회사의 주요경영사항)",
+   "submitter": "코오롱",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000741",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-26T17:45:55+09:00"
+  },
+  {
+   "acptno": "20261126000718",
+   "date": "2026-11-26",
+   "time": "17:32",
+   "market_label": "유가증권",
+   "company_code": "00307",
+   "company": "코오롱글로벌",
+   "title": "[정정]단일판매ㆍ공급계약체결",
+   "submitter": "코오롱글로벌",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000718",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-26T17:45:55+09:00"
+  },
+  {
+   "acptno": "20261126000641",
+   "date": "2026-11-26",
+   "time": "17:09",
+   "market_label": "유가증권",
+   "company_code": "06098",
+   "company": "HL홀딩스",
+   "title": "타인에대한채무보증결정(자회사의 주요경영사항)",
+   "submitter": "에이치엘홀딩스",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000641",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "타인에대한채무보증결정",
+   "first_seen": "2026-11-26T17:45:55+09:00"
+  },
+  {
+   "acptno": "20261126000642",
+   "date": "2026-11-26",
+   "time": "17:01",
+   "market_label": "유가증권",
+   "company_code": "12389",
+   "company": "한국자산신탁",
+   "title": "[정정]소송등의제기ㆍ신청(일정금액 이상의 청구)",
+   "submitter": "한국자산신탁",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000642",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "소송등의제기ㆍ신청(일정금액 이상의 청구)",
+   "first_seen": "2026-11-26T17:45:55+09:00"
+  },
+  {
+   "acptno": "20261126000605",
+   "date": "2026-11-26",
+   "time": "16:43",
+   "market_label": "유가증권",
+   "company_code": "06697",
+   "company": "엘앤에프",
+   "title": "전환사채권발행결정",
+   "submitter": "엘앤에프",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000605",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "전환사채권발행결정",
+   "first_seen": "2026-11-26T17:45:55+09:00"
+  },
+  {
+   "acptno": "20261126000608",
+   "date": "2026-11-26",
+   "time": "16:41",
+   "market_label": "유가증권",
+   "company_code": "27847",
+   "company": "에이피알",
+   "title": "타법인 주식 및 출자증권 양수결정",
+   "submitter": "에이피알",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000608",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "타법인 주식 및 출자증권 양수결정",
+   "first_seen": "2026-11-26T17:45:55+09:00"
+  },
+  {
+   "acptno": "20261126000616",
+   "date": "2026-11-26",
+   "time": "16:39",
+   "market_label": "유가증권",
+   "company_code": "06697",
+   "company": "엘앤에프",
+   "title": "자본으로 인정되는 채무증권 발행결정",
+   "submitter": "엘앤에프",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000616",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "자본으로 인정되는 채무증권 발행결정",
+   "first_seen": "2026-11-26T17:45:55+09:00"
+  },
+  {
+   "acptno": "20261126000541",
+   "date": "2026-11-26",
+   "time": "16:38",
+   "market_label": "유가증권",
+   "company_code": "27847",
+   "company": "에이피알",
+   "title": "타법인주식및출자증권취득결정",
+   "submitter": "에이피알",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000541",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "타법인주식및출자증권취득결정",
+   "first_seen": "2026-11-26T17:45:55+09:00"
+  },
+  {
+   "acptno": "20261126000571",
+   "date": "2026-11-26",
+   "time": "16:37",
+   "market_label": "유가증권",
+   "company_code": "06697",
+   "company": "엘앤에프",
+   "title": "전환사채권발행결정",
+   "submitter": "엘앤에프",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000571",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "전환사채권발행결정",
+   "first_seen": "2026-11-26T17:45:55+09:00"
+  },
+  {
+   "acptno": "20261126000557",
+   "date": "2026-11-26",
+   "time": "16:33",
+   "market_label": "유가증권",
+   "company_code": "06697",
+   "company": "엘앤에프",
+   "title": "[정정]전환사채권발행결정",
+   "submitter": "엘앤에프",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000557",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "전환사채권발행결정",
+   "first_seen": "2026-11-26T17:45:55+09:00"
+  },
+  {
+   "acptno": "20261126000562",
+   "date": "2026-11-26",
+   "time": "16:22",
+   "market_label": "유가증권",
+   "company_code": "06697",
+   "company": "엘앤에프",
+   "title": "[정정]자본으로 인정되는 채무증권 발행결정",
+   "submitter": "엘앤에프",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000562",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "자본으로 인정되는 채무증권 발행결정",
+   "first_seen": "2026-11-26T17:45:55+09:00"
+  },
+  {
+   "acptno": "20261126000478",
+   "date": "2026-11-26",
+   "time": "16:12",
+   "market_label": "유가증권",
+   "company_code": "00238",
+   "company": "케이씨씨",
+   "title": "자기주식 처분 결정",
+   "submitter": "케이씨씨",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261126000478",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "자기주식 처분 결정",
+   "first_seen": "2026-11-26T17:45:55+09:00"
+  },
   {
    "acptno": "20261126000483",
    "date": "2026-11-26",
