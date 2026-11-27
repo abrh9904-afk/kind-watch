@@ -1,15 +1,27 @@
 {
  "date": "2026-11-27",
- "updated_at": "2026-11-27T12:36:49+09:00",
+ "updated_at": "2026-11-27T14:59:28+09:00",
  "last_run": {
-  "at": "2026-11-27T13:40:09+09:00",
-  "scanned": {},
-  "matched": 0,
-  "new": 0,
-  "status": "error",
-  "error": "KIND 조회 실패 (2026-11-27 1페이지): 403 Client Error: Forbidden for url: https://kind.krx.co.kr/disclosure/todaydisclosure.do"
+  "at": "2026-11-27T14:59:28+09:00",
+  "scanned": {
+   "2026-11-27": 283
+  },
+  "matched": 19,
+  "new": 4,
+  "status": "ok",
+  "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-27T14:59:28+09:00",
+   "scanned": {
+    "2026-11-27": 283
+   },
+   "matched": 19,
+   "new": 4,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-27T13:40:09+09:00",
    "scanned": {},
@@ -288,19 +300,69 @@
    "new": 0,
    "status": "ok",
    "error": null
-  },
-  {
-   "at": "2026-11-26T04:53:53+09:00",
-   "scanned": {
-    "2026-11-26": 0
-   },
-   "matched": 0,
-   "new": 0,
-   "status": "ok",
-   "error": null
   }
  ],
  "items": [
+  {
+   "acptno": "20261127000482",
+   "date": "2026-11-27",
+   "time": "14:15",
+   "market_label": "유가증권",
+   "company_code": "00684",
+   "company": "AK홀딩스",
+   "title": "타인에대한채무보증결정(자회사의 주요경영사항)",
+   "submitter": "AK홀딩스",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000482",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "타인에대한채무보증결정",
+   "first_seen": "2026-11-27T14:59:28+09:00"
+  },
+  {
+   "acptno": "20261127000451",
+   "date": "2026-11-27",
+   "time": "14:15",
+   "market_label": "유가증권",
+   "company_code": "13731",
+   "company": "에스디바이오센서",
+   "title": "소송등의판결ㆍ결정(일정금액 이상의 청구)",
+   "submitter": "에스디바이오센서",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000451",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "소송등의판결ㆍ결정(일정금액 이상의 청구)",
+   "first_seen": "2026-11-27T14:59:28+09:00"
+  },
+  {
+   "acptno": "20261127000433",
+   "date": "2026-11-27",
+   "time": "13:58",
+   "market_label": "유가증권",
+   "company_code": "00496",
+   "company": "한신공영",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "한신공영",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000433",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T14:59:28+09:00"
+  },
+  {
+   "acptno": "20261127000430",
+   "date": "2026-11-27",
+   "time": "13:57",
+   "market_label": "유가증권",
+   "company_code": "00496",
+   "company": "한신공영",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "한신공영",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000430",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T14:59:28+09:00"
+  },
   {
    "acptno": "20261127000312",
    "date": "2026-11-27",
