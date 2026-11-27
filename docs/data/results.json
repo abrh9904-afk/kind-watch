@@ -1,17 +1,27 @@
 {
  "date": "2026-11-27",
- "updated_at": "2026-11-27T10:10:08+09:00",
+ "updated_at": "2026-11-27T11:36:20+09:00",
  "last_run": {
-  "at": "2026-11-27T10:10:08+09:00",
+  "at": "2026-11-27T11:36:20+09:00",
   "scanned": {
-   "2026-11-27": 66
+   "2026-11-27": 130
   },
-  "matched": 8,
-  "new": 8,
+  "matched": 15,
+  "new": 7,
   "status": "ok",
   "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-27T11:36:20+09:00",
+   "scanned": {
+    "2026-11-27": 130
+   },
+   "matched": 15,
+   "new": 7,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-27T10:10:08+09:00",
    "scanned": {
@@ -292,19 +302,114 @@
    "new": 0,
    "status": "ok",
    "error": null
-  },
-  {
-   "at": "2026-11-26T02:00:45+09:00",
-   "scanned": {
-    "2026-11-26": 0
-   },
-   "matched": 0,
-   "new": 0,
-   "status": "ok",
-   "error": null
   }
  ],
  "items": [
+  {
+   "acptno": "20261127000312",
+   "date": "2026-11-27",
+   "time": "11:24",
+   "market_label": "유가증권",
+   "company_code": "00496",
+   "company": "한신공영",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "한신공영",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000312",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T11:36:20+09:00"
+  },
+  {
+   "acptno": "20261127000227",
+   "date": "2026-11-27",
+   "time": "10:32",
+   "market_label": "유가증권",
+   "company_code": "03646",
+   "company": "한국가스공사",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "한국가스공사",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000227",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T11:36:20+09:00"
+  },
+  {
+   "acptno": "20261127000222",
+   "date": "2026-11-27",
+   "time": "10:19",
+   "market_label": "유가증권",
+   "company_code": "03646",
+   "company": "한국가스공사",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "한국가스공사",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000222",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T11:36:20+09:00"
+  },
+  {
+   "acptno": "20261127000221",
+   "date": "2026-11-27",
+   "time": "10:17",
+   "market_label": "유가증권",
+   "company_code": "03646",
+   "company": "한국가스공사",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "한국가스공사",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000221",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T11:36:20+09:00"
+  },
+  {
+   "acptno": "20261127000214",
+   "date": "2026-11-27",
+   "time": "10:17",
+   "market_label": "유가증권",
+   "company_code": "03646",
+   "company": "한국가스공사",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "한국가스공사",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000214",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T11:36:20+09:00"
+  },
+  {
+   "acptno": "20261127000212",
+   "date": "2026-11-27",
+   "time": "10:17",
+   "market_label": "유가증권",
+   "company_code": "03646",
+   "company": "한국가스공사",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "한국가스공사",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000212",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T11:36:20+09:00"
+  },
+  {
+   "acptno": "20261127000198",
+   "date": "2026-11-27",
+   "time": "10:17",
+   "market_label": "유가증권",
+   "company_code": "03646",
+   "company": "한국가스공사",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "한국가스공사",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000198",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T11:36:20+09:00"
+  },
   {
    "acptno": "20261127000209",
    "date": "2026-11-27",
