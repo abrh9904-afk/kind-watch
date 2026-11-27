@@ -1,17 +1,27 @@
 {
  "date": "2026-11-27",
- "updated_at": "2026-11-27T14:59:28+09:00",
+ "updated_at": "2026-11-27T16:11:54+09:00",
  "last_run": {
-  "at": "2026-11-27T14:59:28+09:00",
+  "at": "2026-11-27T16:11:54+09:00",
   "scanned": {
-   "2026-11-27": 283
+   "2026-11-27": 418
   },
-  "matched": 19,
-  "new": 4,
+  "matched": 24,
+  "new": 5,
   "status": "ok",
   "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-27T16:11:54+09:00",
+   "scanned": {
+    "2026-11-27": 418
+   },
+   "matched": 24,
+   "new": 5,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-27T14:59:28+09:00",
    "scanned": {
@@ -290,19 +300,84 @@
    "new": 0,
    "status": "ok",
    "error": null
-  },
-  {
-   "at": "2026-11-26T05:53:35+09:00",
-   "scanned": {
-    "2026-11-26": 0
-   },
-   "matched": 0,
-   "new": 0,
-   "status": "ok",
-   "error": null
   }
  ],
  "items": [
+  {
+   "acptno": "20261127000671",
+   "date": "2026-11-27",
+   "time": "15:46",
+   "market_label": "유가증권",
+   "company_code": "00449",
+   "company": "세방전지",
+   "title": "기업가치 제고 계획(자율공시)",
+   "submitter": "세방전지",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000671",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "기업가치 제고 계획(자율공시)",
+   "first_seen": "2026-11-27T16:11:54+09:00"
+  },
+  {
+   "acptno": "20261127000656",
+   "date": "2026-11-27",
+   "time": "15:33",
+   "market_label": "유가증권",
+   "company_code": "09181",
+   "company": "트리니티항공",
+   "title": "자본으로 인정되는 채무증권 발행결정",
+   "submitter": "트리니티항공",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000656",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "자본으로 인정되는 채무증권 발행결정",
+   "first_seen": "2026-11-27T16:11:54+09:00"
+  },
+  {
+   "acptno": "20261127000647",
+   "date": "2026-11-27",
+   "time": "15:30",
+   "market_label": "유가증권",
+   "company_code": "09181",
+   "company": "트리니티항공",
+   "title": "자본으로 인정되는 채무증권 발행결정",
+   "submitter": "트리니티항공",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000647",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "자본으로 인정되는 채무증권 발행결정",
+   "first_seen": "2026-11-27T16:11:54+09:00"
+  },
+  {
+   "acptno": "20261127000625",
+   "date": "2026-11-27",
+   "time": "15:28",
+   "market_label": "유가증권",
+   "company_code": "01121",
+   "company": "현대위아",
+   "title": "임시주주총회 결과",
+   "submitter": "현대위아",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000625",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "임시주주총회 결과",
+   "first_seen": "2026-11-27T16:11:54+09:00"
+  },
+  {
+   "acptno": "20261127000597",
+   "date": "2026-11-27",
+   "time": "15:26",
+   "market_label": "유가증권",
+   "company_code": "03572",
+   "company": "카카오",
+   "title": "[정정]주식 소각 결정",
+   "submitter": "카카오",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000597",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "주식 소각 결정",
+   "first_seen": "2026-11-27T16:11:54+09:00"
+  },
   {
    "acptno": "20261127000482",
    "date": "2026-11-27",
