@@ -1,15 +1,27 @@
 {
  "date": "2026-11-27",
- "updated_at": "2026-11-27T16:11:54+09:00",
+ "updated_at": "2026-11-27T20:55:14+09:00",
  "last_run": {
-  "at": "2026-11-27T19:55:04+09:00",
-  "scanned": {},
-  "matched": 0,
-  "new": 0,
-  "status": "error",
-  "error": "KIND 조회 실패 (2026-11-27 1페이지): 403 Client Error: Forbidden for url: https://kind.krx.co.kr/disclosure/todaydisclosure.do"
+  "at": "2026-11-27T20:55:14+09:00",
+  "scanned": {
+   "2026-11-27": 737
+  },
+  "matched": 34,
+  "new": 10,
+  "status": "ok",
+  "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-27T20:55:14+09:00",
+   "scanned": {
+    "2026-11-27": 737
+   },
+   "matched": 34,
+   "new": 10,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-27T19:55:04+09:00",
    "scanned": {},
@@ -284,19 +296,159 @@
    "new": 0,
    "status": "ok",
    "error": null
-  },
-  {
-   "at": "2026-11-26T10:04:34+09:00",
-   "scanned": {
-    "2026-11-26": 35
-   },
-   "matched": 0,
-   "new": 0,
-   "status": "ok",
-   "error": null
   }
  ],
  "items": [
+  {
+   "acptno": "20261127001155",
+   "date": "2026-11-27",
+   "time": "18:41",
+   "market_label": "유가증권",
+   "company_code": "00612",
+   "company": "SK디스커버리",
+   "title": "[정정]단일판매ㆍ공급계약체결(자회사의 주요경영사항)",
+   "submitter": "에스케이디스커버리",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127001155",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T20:55:14+09:00"
+  },
+  {
+   "acptno": "20261127001086",
+   "date": "2026-11-27",
+   "time": "17:37",
+   "market_label": "유가증권",
+   "company_code": "00202",
+   "company": "코오롱",
+   "title": "[정정]단일판매ㆍ공급계약체결(자회사의 주요경영사항)",
+   "submitter": "코오롱",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127001086",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T20:55:14+09:00"
+  },
+  {
+   "acptno": "20261127001057",
+   "date": "2026-11-27",
+   "time": "17:27",
+   "market_label": "유가증권",
+   "company_code": "00307",
+   "company": "코오롱글로벌",
+   "title": "[정정]단일판매ㆍ공급계약체결",
+   "submitter": "코오롱글로벌",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127001057",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T20:55:14+09:00"
+  },
+  {
+   "acptno": "20261127001047",
+   "date": "2026-11-27",
+   "time": "17:16",
+   "market_label": "유가증권",
+   "company_code": "00021",
+   "company": "DL",
+   "title": "단일판매ㆍ공급계약체결(자회사의 주요경영사항)",
+   "submitter": "디엘",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127001047",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T20:55:14+09:00"
+  },
+  {
+   "acptno": "20261127000965",
+   "date": "2026-11-27",
+   "time": "17:14",
+   "market_label": "유가증권",
+   "company_code": "37550",
+   "company": "DL이앤씨",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "디엘이앤씨",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000965",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T20:55:14+09:00"
+  },
+  {
+   "acptno": "20261127000994",
+   "date": "2026-11-27",
+   "time": "17:04",
+   "market_label": "유가증권",
+   "company_code": "01245",
+   "company": "한화에어로스페이스",
+   "title": "[정정]단일판매ㆍ공급계약체결",
+   "submitter": "한화에어로스페이스",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000994",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T20:55:14+09:00"
+  },
+  {
+   "acptno": "20261127000863",
+   "date": "2026-11-27",
+   "time": "16:44",
+   "market_label": "유가증권",
+   "company_code": "06098",
+   "company": "HL홀딩스",
+   "title": "타인에대한채무보증결정(자회사의 주요경영사항)",
+   "submitter": "에이치엘홀딩스",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000863",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "타인에대한채무보증결정",
+   "first_seen": "2026-11-27T20:55:14+09:00"
+  },
+  {
+   "acptno": "20261127000856",
+   "date": "2026-11-27",
+   "time": "16:44",
+   "market_label": "유가증권",
+   "company_code": "06098",
+   "company": "HL홀딩스",
+   "title": "[정정]타인에대한채무보증결정(자회사의 주요경영사항)",
+   "submitter": "에이치엘홀딩스",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000856",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "타인에대한채무보증결정",
+   "first_seen": "2026-11-27T20:55:14+09:00"
+  },
+  {
+   "acptno": "20261127000852",
+   "date": "2026-11-27",
+   "time": "16:33",
+   "market_label": "유가증권",
+   "company_code": "07916",
+   "company": "CJ CGV",
+   "title": "[정정]타인에대한담보제공결정",
+   "submitter": "씨제이씨지브이",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000852",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "타인에대한담보제공결정",
+   "first_seen": "2026-11-27T20:55:14+09:00"
+  },
+  {
+   "acptno": "20261127000819",
+   "date": "2026-11-27",
+   "time": "16:26",
+   "market_label": "유가증권",
+   "company_code": "07916",
+   "company": "CJ CGV",
+   "title": "조회공시 요구(풍문 또는 보도)에 대한 답변(미확정)",
+   "submitter": "씨제이씨지브이",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000819",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "조회공시 요구(풍문 또는 보도)에 대한 답변(미확정)",
+   "first_seen": "2026-11-27T20:55:14+09:00"
+  },
   {
    "acptno": "20261127000671",
    "date": "2026-11-27",
