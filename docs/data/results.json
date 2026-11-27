@@ -1,17 +1,27 @@
 {
  "date": "2026-11-27",
- "updated_at": "2026-11-27T08:52:41+09:00",
+ "updated_at": "2026-11-27T10:10:08+09:00",
  "last_run": {
-  "at": "2026-11-27T08:52:41+09:00",
+  "at": "2026-11-27T10:10:08+09:00",
   "scanned": {
-   "2026-11-27": 9
+   "2026-11-27": 66
   },
-  "matched": 0,
-  "new": 0,
+  "matched": 8,
+  "new": 8,
   "status": "ok",
   "error": null
  },
  "runs": [
+  {
+   "at": "2026-11-27T10:10:08+09:00",
+   "scanned": {
+    "2026-11-27": 66
+   },
+   "matched": 8,
+   "new": 8,
+   "status": "ok",
+   "error": null
+  },
   {
    "at": "2026-11-27T08:52:41+09:00",
    "scanned": {
@@ -292,18 +302,128 @@
    "new": 0,
    "status": "ok",
    "error": null
-  },
-  {
-   "at": "2026-11-26T01:00:02+09:00",
-   "scanned": {
-    "2026-11-25": 534,
-    "2026-11-26": 0
-   },
-   "matched": 19,
-   "new": 0,
-   "status": "ok",
-   "error": null
   }
  ],
- "items": []
+ "items": [
+  {
+   "acptno": "20261127000209",
+   "date": "2026-11-27",
+   "time": "10:07",
+   "market_label": "유가증권",
+   "company_code": "31740",
+   "company": "자이에스앤디",
+   "title": "[정정]단일판매ㆍ공급계약 체결(자율공시)",
+   "submitter": "자이에스앤디",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000209",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T10:10:08+09:00"
+  },
+  {
+   "acptno": "20261127000197",
+   "date": "2026-11-27",
+   "time": "10:00",
+   "market_label": "유가증권",
+   "company_code": "00021",
+   "company": "DL",
+   "title": "단일판매ㆍ공급계약체결(자회사의 주요경영사항)",
+   "submitter": "디엘",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000197",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T10:10:08+09:00"
+  },
+  {
+   "acptno": "20261127000195",
+   "date": "2026-11-27",
+   "time": "10:00",
+   "market_label": "유가증권",
+   "company_code": "03646",
+   "company": "한국가스공사",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "한국가스공사",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000195",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T10:10:08+09:00"
+  },
+  {
+   "acptno": "20261127000182",
+   "date": "2026-11-27",
+   "time": "09:59",
+   "market_label": "유가증권",
+   "company_code": "03646",
+   "company": "한국가스공사",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "한국가스공사",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000182",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T10:10:08+09:00"
+  },
+  {
+   "acptno": "20261127000183",
+   "date": "2026-11-27",
+   "time": "09:58",
+   "market_label": "유가증권",
+   "company_code": "37550",
+   "company": "DL이앤씨",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "디엘이앤씨",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000183",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T10:10:08+09:00"
+  },
+  {
+   "acptno": "20261127000174",
+   "date": "2026-11-27",
+   "time": "09:58",
+   "market_label": "유가증권",
+   "company_code": "03646",
+   "company": "한국가스공사",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "한국가스공사",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000174",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T10:10:08+09:00"
+  },
+  {
+   "acptno": "20261127000171",
+   "date": "2026-11-27",
+   "time": "09:56",
+   "market_label": "유가증권",
+   "company_code": "03646",
+   "company": "한국가스공사",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "한국가스공사",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000171",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T10:10:08+09:00"
+  },
+  {
+   "acptno": "20261127000155",
+   "date": "2026-11-27",
+   "time": "09:55",
+   "market_label": "유가증권",
+   "company_code": "33626",
+   "company": "두산퓨얼셀",
+   "title": "단일판매ㆍ공급계약체결",
+   "submitter": "두산퓨얼셀",
+   "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261127000155",
+   "market": "kospi",
+   "market_name": "코스피",
+   "matched_form": "단일판매ㆍ공급계약체결",
+   "first_seen": "2026-11-27T10:10:08+09:00"
+  }
+ ]
 }
